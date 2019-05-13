@@ -1,0 +1,15 @@
+---
+   vpnserver: 192.168.0.1
+   vpnport: 1194
+   invpnkey: |-
+      -----BEGIN PRIVATE KEY-----
+      some client key
+      -----END PRIVATE KEY-----
+   invpncert: |-
+      -----BEGIN CERTIFICATE-----
+      some cert
+      -----END CERTIFICATE-----
+   invpnca: |-
+      -----BEGIN CERTIFICATE-----
+      some ca cert
+      -----END CERTIFICATE-----

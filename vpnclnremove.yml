@@ -1,0 +1,14 @@
+---
+#removing openvpn and configs
+   - hosts: openvpnclients
+     user: ansible
+     become: yes
+     tasks:     
+     - name: Remove openvpn
+       apt:
+         name: openvpn
+         state: absent
+     - name: Clear config catalog
+       file:
+         path: /etc/openvpn
+         state: absent

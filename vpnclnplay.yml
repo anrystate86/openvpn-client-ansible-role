@@ -1,0 +1,6 @@
+---
+   # Install and run openvpn clients
+   - hosts: openvpnclients
+     user: ansible
+     roles: 
+       - openvpnclnt

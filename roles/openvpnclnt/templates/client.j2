@@ -1,0 +1,25 @@
+# {{ ansible_managed }}
+
+client
+nobind
+dev tune
+
+remote {{ vpnserver }} {{ vpnport }} udp
+
+<key>
+{{ invpnkey }}
+</key>
+
+<cert>
+{{ invpncert }}
+</cert>
+
+<ca>
+{{ invpnca }}
+</ca>
+
+comp-lzo
+key-direction 1
+auth-nocache
+reneg-sec 259200
+
